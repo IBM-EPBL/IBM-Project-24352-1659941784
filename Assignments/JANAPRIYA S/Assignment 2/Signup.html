@@ -1,0 +1,40 @@
+{% extends 'base.html '%}
+{% block head %}
+<title>Signup page</title>
+{% endblock%}
+
+{%block body%}<mainclass="container">
+    <divclass="mx-auto mt-5 border bg-light"style="width: 500px;">
+    <h2class="mx-4 mt-2">SIGNUP</h2>
+    <formaction="{{url_for('accessbackend') }}"method="post">
+        <divclass="my-2 mx-4">
+            <labelfor="firstname">first name</label>
+            <inputtype="text"class="form-control"placeholder="Ram"name="firstname"required/>
+        </div>
+        <divclass="my-2 mx-4">
+            <labelfor="lastname">last name</label>
+            <inputtype="text"class="form-control"placeholder="kumar"name="lastname"required/>
+        </div>
+        <divclass="my-2 mx-4">
+            <labelfor="email">email</label>
+            <inputtype="text"class="form-control"placeholder="abc@gmail.com"name="email"required/>
+        </div>
+        <divclass="my-2 mx-4">
+            <labelfor="phone">phone</label>
+            <inputtype="text"class="form-control"placeholder="0987654321"name="phone"required/>
+        </div>
+        <divclass="my-2 mx-4">
+            <labelfor="password">password</label>
+            <inputtype="password"class="form-control"placeholder="password"name="password"required/>
+        </div>
+        <divclass="my-2 mx-4">
+            <labelfor="dob">date of brith</label>
+            <inputtype="date"class="form-control"name="dob"required/>
+        </div>
+        <inputtype="submit"value="submit"class="btnbtn-primary my-4 my-2 mt-2"/>
+
+    </form>
+
+    </div>
+</main>
+{% endblock%}
