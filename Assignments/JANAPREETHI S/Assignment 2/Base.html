@@ -1,0 +1,59 @@
+<!DOCTYPEhtml>
+<htmllang="en">
+    <head>
+        <metacharset="utf-8">
+        <metaname="viewport"content="width=device-width, initial-scale=1">
+<linkhref="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"crossorigin="anonymous">
+<scriptsrc="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"crossorigin="anonymous"></script>
+
+<!--<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"> -->
+{% block head%}{% endblock %}
+
+</head>
+<bodystyle="background: linear-gradient(70deg, blue 10%, pink);">
+
+    <navclass="navbarnavbar-expand-lgnavbar-light bg-light">
+        <divclass="container-fluid">
+          <aclass="navbar-brand"href="#">Navbar</a>
+          <buttonclass="navbar-toggler"type="button"data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent"aria-controls="navbarSupportedContent"aria-expanded="false"aria-label="Toggle navigation">
+            <spanclass="navbar-toggler-icon"></span>
+          </button>
+          <divclass="collapse navbar-collapse"id="navbarSupportedContent">
+            <ulclass="navbar-nav me-auto mb-2 mb-lg-0">
+              <liclass="nav-item">
+                <aclass="nav-link active"aria-current="page"href="/">Home</a>
+              </li>
+              <liclass="nav-item">
+                <aclass="nav-link"href="/signin">signin</a>
+              </li>
+              <liclass="nav-item">
+                <aclass="nav-link"href="/signup">signup</a>
+              </li>
+              <liclass="nav-item">
+                <aclass="nav-link"href="/about">about</a>
+              </li>
+              <liclass="nav-item dropdown">
+                <aclass="nav-link dropdown-toggle"href="#"id="navbarDropdown"role="button"data-bs-toggle="dropdown"aria-expanded="false">
+                  Dropdown
+                </a>
+                <ulclass="dropdown-menu"aria-labelledby="navbarDropdown">
+                  <li><aclass="dropdown-item"href="#">Action</a></li>
+                  <li><aclass="dropdown-item"href="#">Another action</a></li>
+                  <li><hrclass="dropdown-divider"></li>
+                  <li><aclass="dropdown-item"href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <formclass="d-flex">
+              <inputclass="form-control me-2"type="search"placeholder="Search"aria-label="Search">
+              <buttonclass="btnbtn-outline-success"type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>   
+    <divclass="container mt-5">
+        {% block body %} {% endblock %}
+    </div>
+</body>
+</html>
