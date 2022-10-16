@@ -75,3 +75,6 @@ defaccessbackend():
         finally:
             iflen(user) >0:
                 iftup == user[0][0]:
+                    return redirect(url_for("user_page",id=tue))
+                print(user[0][0])
+            return redirect(url_for('signin'))
