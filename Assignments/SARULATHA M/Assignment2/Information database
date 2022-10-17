@@ -1,0 +1,21 @@
+{% extends 'base.html '%}
+{% block head %}
+<title>home page</title>
+{% endblock%}
+
+{%block body%}
+<mainclass="container mx-auto my-4 bg-light border"style="width:70%;">
+<divclass="p-4">
+    <h2>{{ user[0] +" " + user[1]}}</h2>
+    <divclass="border rounded fs-5 p-1 px-5 mb-3"style="width: 60%;">
+        <spanstyle="display: block;">first name:{{user[0]}}</span>
+        <spanstyle="display: block;">last name:{{user[1]}}</span>
+        <spanstyle="display: block;">email:{{user[2]}}</span>
+        <spanstyle="display: block;">phone:{{user[3]}}</span>
+        <spanstyle="display: block;">date of brith:{{user[5 ]}}</span>
+
+    </div>
+
+</div></main>
+{% endblock%}
+Footer
