@@ -1,0 +1,23 @@
+{% extends 'base.html '%}
+{% block head %}
+<title>Sigin page</title>
+{% endblock%}
+
+{%block body%}
+<mainclass="container">
+    <divclass="mx-auto mt-5 border bg-light"style="width:500px;">
+    <h2class='mx-4 mt-2'>SINGIN</h2>
+    <formaction="{{url_for('accessbackend') }}"method="get">
+        <divclass="my-2 mx-4">
+            <labelfor="email">Email</label>
+            <inputtype="email"class="form-control"placeholder="adc@gmail.com"name="email"required/>
+        </div>
+        <divclass="my-2 mx-4">
+            <labelfor="password">password</label>
+            <inputtype="password"class="form-control"  name="password"required/>
+        </div>
+        <inputtype="submit"value="submit"class="btnbtn-primary my-4 mt-2 "/>
+
+    </form></div>
+</main>
+{% endblock%}
