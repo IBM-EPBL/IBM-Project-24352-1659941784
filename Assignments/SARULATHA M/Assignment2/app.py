@@ -4,7 +4,7 @@ import sqlite3 assql
 
  
 app=Flask(__name__)
-app.secret_key ='shreesathyam'
+app.secret_key ='abcdxyz'
 
 @app.route('/')
 defhome():
